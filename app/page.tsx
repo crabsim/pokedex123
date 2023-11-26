@@ -21,7 +21,7 @@ const Page: React.FC<PageProps> = ({ params, searchParams }) => {
   return (
     <div>
       <h1>Welcome to the Pokedex</h1>
-      {/* <FilterablePokedexTable pokemons={pokemons} /> */}
+      <FilterablePokedexTable />
     </div>
   );
 };
