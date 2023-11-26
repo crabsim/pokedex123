@@ -26,7 +26,7 @@ const Page: React.FC<PageProps> = ({ params, searchParams }) => {
     <div>
       <h1>Welcome to the Pokedex</h1>
       {/* <PokedexContainer /> */}
-      {dummyQuery.data ? <div>{dummyQuery.data}</div> : <div>Loading...</div>}
+      {dummyQuery.data ? <div>{dummyQuery.data.greeting}</div> : <div>Loading...</div>}
     </div>
   );
 };
