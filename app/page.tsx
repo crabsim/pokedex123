@@ -1,4 +1,5 @@
 import React from 'react';
+import 'next/client'; // Add this line to mark as client component
 import PokedexContainer from './components/PokedexContainer.client';
 // import { trpc } from './servies'; // Assuming you have a trpc utility set up for tRPC hooks
 
