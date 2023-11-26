@@ -1,11 +1,7 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
+import PokedexContainer from './components/PokedexContainer.client';
 // import { trpc } from './servies'; // Assuming you have a trpc utility set up for tRPC hooks
 
-const FilterablePokedexTable = dynamic(
-  () => import('./components/FilterablePokedexTable.client'),
-  { ssr: false } // This will load the component only on the client-side
-);
 
 export interface PageProps {
   params?: any;
@@ -26,7 +22,7 @@ const Page: React.FC<PageProps> = ({ params, searchParams }) => {
   return (
     <div>
       <h1>Welcome to the Pokedex</h1>
-      <FilterablePokedexTable />
+      <PokedexContainer />
     </div>
   );
 };
