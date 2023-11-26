@@ -8,15 +8,15 @@ export interface PageProps {
 }
 
 const Page: React.FC<PageProps> = ({ params, searchParams }) => {
-  const { data: pokemons, isLoading } = trpc.useQuery(['getAllPokemon']); // Replace 'getAllPokemon' with your actual tRPC query
+  // const { data: pokemons, isLoading } = trpc.useQuery(['getAllPokemon']); // Replace 'getAllPokemon' with your actual tRPC query
 
-  if (isLoading) {
-    return <div>Loading...</div>; // Or any loading component you prefer
-  }
+  // if (isLoading) {
+  //   return <div>Loading...</div>; // Or any loading component you prefer
+  // }
 
-  if (!pokemons) {
-    return <div>No Pokémon found.</div>;
-  }
+  // if (!pokemons) {
+  //   return <div>No Pokémon found.</div>;
+  // }
 
   return (
     <div>
