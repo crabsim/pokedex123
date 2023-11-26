@@ -17,6 +17,25 @@ async function getPokemonByName(name: string) {
     });
   }
   
-  async function getAllPokemon() {
+async function getAllPokemon() {
     return await prisma.pokemon.findMany();
-  }
+}
+
+async function addDummyData() {
+    const dummyData = [
+        { name: 'Pikachu', types: ['Electric'], sprite: 'https://example.com/pikachu.png' },
+        { name: 'Charizard', types: ['Fire', 'Flying'], sprite: 'https://example.com/charizard.png' },
+        // Add more dummy data here
+    ];
+
+    for (const pokemon of dummyData) {
+        await addPokemon(pokemon.name, pokemon.types, pokemon.sprite);
+    }
+}
+
+export default {
+    addPokemon,
+    getPokemonByName,
+    getAllPokemon,
+    addDummyData,
+}

@@ -24,3 +24,9 @@
 //       return await pokemonService.getAllPokemon();
 //     },
 //   });
+import { createRouter } from "../createRouter";
+import {dummyRouter} from "./dummy";
+
+export const pokemonRouter = createRouter().merge("dummy.", dummyRouter);
+
+export type PokemonRouter = typeof pokemonRouter;
