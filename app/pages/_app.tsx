@@ -2,7 +2,7 @@ import { AppProps, AppType } from 'next/app'; // Import AppProps for better type
 import { withTRPC } from '@trpc/next';
 // import superjson from 'superjson'; // If you use superjson for serialization
 
-import AppRouter from './api/trpc/[trpc]';
+import {AppRouter} from './api/trpc/[trpc]';
 import '../styles/globals.css';
 
 // Define your MyApp component
@@ -25,7 +25,7 @@ const getBaseUrl = () => {
 };
 
 // Wrap your MyApp with withTRPC
-export default withTRPC<typeof AppRouter>({
+export default withTRPC<AppRouter>({
   config({ ctx }) {
     return {
       url: `${getBaseUrl()}/api/trpc`,
