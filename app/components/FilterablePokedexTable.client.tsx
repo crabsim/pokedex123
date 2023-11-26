@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import 'next/client'; // Add this line to mark as client component
+
 import PokemonTypeSelection from './PokemonTypeSelection.client';
 import PokedexTable from './PokedexTable.client';
 import { IPokemon } from '../types'; // Ensure this type is correctly defined based on your data structure
