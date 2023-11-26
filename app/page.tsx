@@ -22,9 +22,11 @@ const Page: React.FC<PageProps> = ({ params, searchParams }) => {
   // }
 
   return (
+    
     <div>
       <h1>Welcome to the Pokedex</h1>
       {/* <PokedexContainer /> */}
+      {dummyQuery.data ? <div>{dummyQuery.data}</div> : <div>Loading...</div>}
     </div>
   );
 };
