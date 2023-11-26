@@ -5,7 +5,6 @@ import { withTRPC } from '@trpc/next';
 import {AppRouter} from './api/trpc/[trpc]';
 import '../styles/globals.css';
 
-// Define your MyApp component
 const MyApp: AppType = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;
 };
@@ -33,6 +32,5 @@ export default withTRPC<AppRouter>({
       // transformer: superjson,
     };
   },
-  // Enable SSR if needed, set to true if you want to fetch data on the server
   ssr: false,
 })(MyApp);
