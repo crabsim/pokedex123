@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterablePokedexTable from './components/FilterablePokedexTable';
+import FilterablePokedexTable from './components/FilterablePokedexTable.client';
 // import { trpc } from './servies'; // Assuming you have a trpc utility set up for tRPC hooks
 
 export interface PageProps {

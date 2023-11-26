@@ -1,5 +1,5 @@
 import React from 'react';
-import PokemonRow from './PokemonRow';
+import PokemonRow from './PokemonRow.client';
 import { IPokemon } from '../types'; 
 
 interface PokedexTableProps {

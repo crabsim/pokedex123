@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import PokemonTypeSelection from './PokemonTypeSelection';
-import PokedexTable from './PokedexTable';
+import PokemonTypeSelection from './PokemonTypeSelection.client';
+import PokedexTable from './PokedexTable.client';
 import { IPokemon } from '../types'; // Ensure this type is correctly defined based on your data structure
 
 interface FilterablePokedexTableProps {
